@@ -21,9 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // return;
       fetchJoke().then(whatever => {
         const newJokeLi = document.createElement('li')
-        newJokeLi.innerHTML = `
-        <span class="username">${username} says:</span> ${joke}
-        `
+        newJokeLi.innerHTML = `<span class="username">${username} says:</span> ${joke}`
         // debugger
 
         jokeList.appendChild(newJokeLi)
